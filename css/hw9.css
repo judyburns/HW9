@@ -1,0 +1,60 @@
+/************************************************
+ homework 9 styles
+************************************************/
+
+
+* {
+	font-family: "Times New Roman", Times, serif;
+}
+
+body {background-color: rgba(247,225,205,0.75);}
+
+.header {
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #999999;
+}
+
+.main-heading {
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+h1 {font-weight: bold;
+	text-align: center;
+}
+
+.col {
+	margin-top: 10px;
+}
+
+.one {
+	height: 200px;
+	background-color: red;
+}
+
+.two {
+	height: 200px;
+	background-color: green;
+}
+
+.three {
+	height: 200px;
+	background-color: blue;
+}
+
+.random-button {
+	margin: 50px;
+}
+
+button {
+	background-color: #66ff33;
+	font-size: 18px;
+}
+
+p.msg {margin-top: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
