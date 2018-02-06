@@ -45,16 +45,27 @@ h1 {font-weight: bold;
 	background-color: blue;
 }
 
-.random-button {
-	margin: 50px;
+button {
+	padding: 4px;
 }
 
-button {
+.random-box, .close-box {
+	margin: 30px;
+}
+
+.random-button {
 	background-color: #66ff33;
 	font-size: 18px;
+	font-weight: bold;
 }
 
-p.msg {margin-top: 10px;
+.close-button {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+p.msg {
+	margin-top: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
 }

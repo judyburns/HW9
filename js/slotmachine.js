@@ -15,18 +15,26 @@
 
  	
 $(document).ready(function(){
-	// Bind Button Click
-	$("button").click(function(){
+	// Bind Random Button Click
+	$(".random-button").click(function(){
 		getBoxColors();
     });
 	
-	// Bind Button Hover
-	$("button").hover(function(){
-		$(this).text("SPIN NOW").css({"font-size": "22px", "background-color": "#006600"});
+	// Bind Random Button Hover
+	$(".random-button").hover(function(){
+		$(this).text("SPIN NOW").css({"font-size": "20px", "background-color": "#006600"});
     },
     function(){
-        $(this).text("SPIN AGAIN").css({"font-size": "18px", "background-color": "#66ff33"});
+        $(this).text("SPIN AGAIN").css({"font-size": "16px", "background-color": "#66ff33"});
     });
+	
+	// Bind Close Button Click with Callback 
+	$(".close-button").click(function(){
+		$("*").fadeOut(2000, function(){
+			$("p.msg").text("GOODBYE");
+			$("*").fadeIn(2000);
+		});
+	});
 });
 	
  function getBoxColors () {
@@ -100,7 +108,6 @@ function setBoxAttr (box,randomNum){
 
 /*
 // This works for "PF5" (reload), exiting the tab, and using the "reload" button.
-// Also, could not animate because no jQuery. Use of  HTML event handler on the <body> tag.
 */
 function unloadPage () {
 	 return "";
