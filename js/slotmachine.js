@@ -27,21 +27,6 @@ $(document).ready(function(){
     function(){
         $(this).text("SPIN AGAIN").css({"font-size": "18px", "background-color": "#66ff33"});
     });
-	
-	/*
-	// Bind  ?
-	//
-	// Could not get this feature to work because jQuery is no longer supporting it.
-	// There are no jQuery events to support page load and unload events even when using the on() method.
-	// Javascript supports onbeforeload, but shows an alert popup which contains a message that you cannot change.
-	// Also, could not animate because no jQuery.
-	//
-	$(*).on('beforeunload', function(){
-		$(*).fadeout(2000);
-		$("p.msg").text("GOODBYE").fadedin(2000);
-	});
-	*/
-	
 });
 	
  function getBoxColors () {
@@ -118,6 +103,5 @@ function setBoxAttr (box,randomNum){
 // Also, could not animate because no jQuery. Use of  HTML event handler on the <body> tag.
 */
 function unloadPage () {
-	 // code for things to do before unloading the page
 	 return "";
 }
