@@ -14,32 +14,34 @@
  
 
  	
-$(document).ready(function(){
+$(document).ready(function () {
 	// Bind Random Button Click
-	$(".random-button").click(function(){
+    $(".random-button").click(function () {
 		getBoxColors();
     });
 	
 	// Bind Random Button Hover
-	$(".random-button").hover(function(){
+    $(".random-button").hover(function () {
+		// hover in
 		$(this).text("SPIN NOW").css({"font-size": "20px", "background-color": "#006600"});
     },
-    function(){
+		// hover out
+							  function(){
         $(this).text("SPIN AGAIN").css({"font-size": "16px", "background-color": "#66ff33"});
     });
 	
 	// Bind Close Button Click with Callback 
 	$(".close-button").click(function(){
-		$("*").fadeOut(2000, function(){
-			$("p.msg").text("GOODBYE");
-			$("*").fadeIn(2000);
+		$("p.msg").fadeOut(3000, function(){
+            $(this).text("GOODBYE").addClass("alert alert-info").fadeIn(3000);
 		});
 	});
 });
 	
- function getBoxColors () {
-	 // alert(event.target);
-	 
+function getBoxColors() {
+     // remove alert classes from message field
+     $("p.msg").removeClass("alert alert-info");
+
 	 //	i = box number of loops (3 boxes)
 	 // j = number of loops to get random number (10 times)
 	 
